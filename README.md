@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build
-      uses: jerryjvl/jekyll-build-action@v1
+      uses: ealenn/jekyll-build-action@v2
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
@@ -38,7 +38,7 @@ You can define the location of jekyll in your project with optional `path` varia
 
 ```yaml
 - name: Build
-  uses: jerryjvl/jekyll-build-action@v1
+  uses: ealenn/jekyll-build-action@v1
   with:
     path: 'docs'
 ```
